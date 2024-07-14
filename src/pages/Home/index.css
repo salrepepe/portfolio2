@@ -1,0 +1,364 @@
+.dark {
+  background-color: #151418;
+}
+
+.firstScreen {
+  position: relative;
+  padding: 200px 0;
+  overflow: hidden;
+}
+
+.firstScreen .blob {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  left: 2%;
+  z-index: 2;
+}
+
+/* .firstScreen svg:last-child {
+  left: 0;
+  right: unset;
+} */
+
+.firstScreen .container {
+  height: 100%;
+}
+
+.firstScreen .btn {
+  margin-top: 32px;
+}
+
+.firstScreen .img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: 10;
+}
+
+.firstScreen .img {
+  position: relative;
+  transition: all 0.3s linear;
+  height: fit-content;
+  z-index: 2;
+  /* animation: top-bottom 10s linear infinite; */
+}
+
+.firstScreen .img::before {
+  /* position: absolute; */
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-secondary);
+  z-index: -1;
+  border-radius: 100%;
+}
+
+.firstScreen .rectangle {
+  position: absolute;
+  width: 238px;
+  height: 239px;
+  right: 32%;
+  top: -54px;
+  z-index: 1;
+  background: linear-gradient(220.15deg, #25faff 12.82%, #25faff 101.44%);
+  opacity: 0.85;
+  filter: blur(120px);
+  border-radius: 500;
+}
+.firstScreen .rectangle2 {
+  position: absolute;
+  width: 299px;
+  height: 239px;
+  right: 34%;
+  top: 100px;
+  z-index: 1;
+  border-radius: 500;
+  background: linear-gradient(
+    220.15deg,
+    var(--color-primary) 12.82%,
+    var(--color-primary) 101.44%
+  );
+  opacity: 0.85;
+  filter: blur(200px);
+}
+
+.firstScreen .rectangle3 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 700px;
+  bottom: 142px;
+  background: linear-gradient(220.15deg, #25faff 12.82%, #25faff 101.44%);
+  opacity: 0.85;
+  border-radius: 13px;
+}
+
+.firstScreen .rectangle4 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 940px;
+  bottom: 142px;
+  opacity: 0.85;
+  background: linear-gradient(
+    220.15deg,
+    #fff258 12.82%,
+    rgba(1, 173, 247, 0) 101.44%
+  );
+  /* box-shadow: 0px 50px 120px #01adf7; */
+  border-radius: 6px;
+}
+
+.firstScreen .rectangle6 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 940px;
+  bottom: 276px;
+  opacity: 0.85;
+  background: rgba(1, 99, 247, 0.3);
+  box-shadow: 0px 50px 120px #01adf7;
+  border-radius: 6px;
+}
+
+.firstScreen .rectangle5 {
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  right: 978px;
+  bottom: 392px;
+  background: linear-gradient(220.15deg, #25faff 12.82%, #25faff 101.44%);
+  opacity: 0.5;
+  border-radius: 13px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.firstScreen .rectangle7 {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  transform: rotate(180deg);
+}
+
+.firstScreen .rectangle8 {
+  position: absolute;
+  top: 60px;
+  right: -70px;
+  z-index: -1;
+  /* transform: rotate(180deg); */
+}
+
+.about {
+  padding: 40px 0;
+  position: relative;
+}
+
+.about img {
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  position: sticky;
+  top: 0;
+}
+
+.about .h4 {
+  margin: 24px 0;
+}
+
+.about .h6 {
+  white-space: pre-wrap;
+}
+
+.about ul.skills {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about .skills li {
+  margin: 0 16px 16px 0;
+  padding: 5px 15px;
+  background: var(--color-secondary);
+  border-radius: 12px;
+  white-space: nowrap;
+  transition: all 0.2s linear;
+  z-index: 2;
+}
+
+.about .skills li:hover {
+  transform: scale(1.15);
+}
+
+.about .roadmap {
+  padding-left: 32px;
+  margin-top: 32px;
+}
+
+.about .roadmap .timeline {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.about .roadmap .timeline::before {
+  position: absolute;
+  top: 0;
+  left: -24px;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: var(--color-secondary);
+}
+
+.about .roadmap .timeline::after {
+  position: absolute;
+  top: 6px;
+  left: -29px;
+  content: "";
+  height: 11px;
+  width: 11px;
+  background: var(--color-secondary);
+  border-radius: 100%;
+}
+
+.about .roadmap .timeline .date {
+  color: var(--color-primary);
+}
+
+.about .roadmap .timeline .place {
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.about .roadmap .timeline .descr {
+  margin-bottom: 16px;
+  font-weight: 200;
+}
+.about .tabs {
+  margin-top: 32px;
+}
+
+.about .tab {
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.about .tab:first-child {
+  margin-right: 16px;
+}
+
+.about .tab::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: var(--color-secondary);
+  transition: all 0.3s linear;
+}
+
+.about .tab_active {
+  color: var(--color-primary);
+}
+
+.about .tab:hover:before,
+.about .tab_active:before {
+  width: 100%;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio .slides {
+  width: 100%;
+}
+
+.portfolio .slides .slide {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 12px;
+  z-index: 2;
+
+}
+
+.portfolio .slides .slide h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+}
+
+.portfolio .slides .slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--color-primary);
+}
+
+.portfolio button {
+  margin: 40px auto 0;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .firstScreen .blob {
+    display: none;
+  }
+
+  .firstScreen .h1 {
+    max-width: 84%;
+  }
+  .firstScreen .img img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .firstScreen .img {
+    margin-bottom: 24px;
+  }
+
+  .about img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstScreen {
+    padding: 145px 0;
+  }
+}
+
+@keyframes top-bottom {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  75% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

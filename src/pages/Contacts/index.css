@@ -1,0 +1,39 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 200px 0;
+}
+
+.contacts .h3 {
+  margin-bottom: 8px;
+}
+
+.contacts ul li {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.contacts svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 32px;
+}
+
+.contacts a:last-child svg {
+  margin-right: 0;
+}
+.contacts a svg path {
+  transition: all 0.3s linear;
+}
+
+.contacts a:hover svg path {
+  fill: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 80px 0 0;
+  }
+}

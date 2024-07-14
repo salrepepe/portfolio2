@@ -1,0 +1,26 @@
+.changeLanguage {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+.changeLanguage span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.changeLanguage .lang_active {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.changeLanguage span:first-child {
+  border-right: 1px solid #fff;
+  margin-right: 8px;
+  padding-right: 8px;
+}

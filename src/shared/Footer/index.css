@@ -1,0 +1,22 @@
+footer {
+  padding: 80px 0 0 0;
+}
+footer a {
+  margin-right: 16px;
+}
+
+footer a:last-child {
+  margin: 0;
+}
+
+footer a svg {
+  width: 30px;
+  height: 30px;
+}
+footer a svg path {
+  transition: all 0.2s linear;
+}
+
+footer a:hover svg path {
+  fill: var(--color-primary);
+}
