@@ -7,6 +7,10 @@
     #c4c4c4; */
 }
 
+#root {
+  /* overflow-x: hidden; */
+}
+
 * {
   margin: 0;
   padding: 0;

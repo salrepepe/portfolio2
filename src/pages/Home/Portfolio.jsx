@@ -10,7 +10,13 @@ const Portfolio = () => {
 
   return (
     <section class="portfolio dark" id="portfolio">
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          position: "relative",
+          zIndex: 2,
+        }}
+      >
         <h2 className="h1 title">{t("portfolio")}</h2>
         <div className="slides">
           {slides.map((item, idx) => (
@@ -39,7 +45,6 @@ const Portfolio = () => {
           {t("viewAll")}
         </button>
       </div>
-   
     </section>
   );
 };

@@ -52,7 +52,7 @@ const About = ({ t }) => {
 
   return (
     <section className="about dark" id="about">
-      <div className="container">
+      <div style={{ zIndex: 2, position: "relative" }} className="container">
         <h2 className="h1 title">{t("aboutMe")}</h2>
         <div className="row">
           <div className="col-12 col-lg-6 d-flex justify-content-center"></div>
@@ -109,7 +109,7 @@ const About = ({ t }) => {
           transform: "rotate(180deg)",
           zIndex: 0,
         }}
-        width="699px"
+        width="100%"
         height="935px"
         viewBox="0 0 699 935"
         fill="none"

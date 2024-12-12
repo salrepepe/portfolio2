@@ -4,7 +4,10 @@ import "./index.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="container d-flex justify-content-center flex-column align-items-center">
+      <div
+        style={{ zIndex: 2, position: "relative" }}
+        className="container d-flex justify-content-center flex-column align-items-center"
+      >
         <div style={{ marginBottom: 16 }}>
           <a
             href="https://www.instagram.com/salrepepe/"
@@ -92,7 +95,7 @@ const Footer = () => {
           position: "absolute",
           bottom: "-50%",
           right: 0,
-          zIndex: 1,
+          zIndex: 0,
         }}
         width="699px"
         height="935px"
